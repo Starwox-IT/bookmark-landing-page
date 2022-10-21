@@ -1,0 +1,26 @@
+.p {
+    padding: 2% 29%;
+}
+.card-exten {
+    box-shadow: 0px 5px 15px 2px hsl(0, 0%, 70%);
+    padding: 10% 0;
+}
+.row .col-4 {
+    padding: 0 3%;
+}
+.card-img {
+width: 15%;
+}
+.card-img img {
+    display: block;
+    margin: 0 auto;
+}
+.row .col-4 .card-writeup {
+    margin: 8% auto;
+}
+
+.row .col-4 .card-btn {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    font-weight: 500;
+}
