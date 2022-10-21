@@ -1,161 +1,85 @@
-body {
-    font-family: "rubik";
-    font-size: calc(10px + .5vw);
-
+/* NAV STARTS */
+.mynav {
+    padding: 1% 7% 1% 8%;
 }
 
-/* HERO STARTS */
-.hero {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 5% 7% 0;
-    overflow-x: hidden;
+.navbar {
+    padding: 0;
 }
 
-.hero-writeup {
-    padding-right: 7%;
+.nav-logo {
+    margin: 4% 0;
 }
 
-.hero-writeup h1 {
-    font-weight: 500;
-    font-size: calc(30px + .5vw);
-    color: hsl(229, 31%, 21%);
+.navbar li {
+    list-style: none;
 }
 
-.hero-writeup p {
-    color: hsl(0, 0%, 60%);
-}
-
-.writeup-text {
-    margin: 5% 0;
-}
-
-.get-chrome-btn {
-    color: white;
-    border-radius: 5px;
-    background-color: hsl(231, 69%, 60%);
-    border: 2px solid hsl(231, 69%, 60%);
-    font-weight: 500;
-    font-size: calc(10px + .5vw);
-    margin-right: 5px;
-}
-
-.get-chrome-btn:hover {
-    color: hsl(231, 69%, 60%);
-    border: 2px solid hsl(231, 69%, 60%);
-    background-color: #fff;
-}
-
-.get-firefox-btn {
-    color: hsl(229, 31%, 21%);
-    border-radius: 5px;
-    background-color: hsl(0, 0%, 97%);
-    border: 2px solid hsl(0, 0%, 97%);
-    box-shadow: 0px 4px 5px 1px hsl(0, 0%, 90%);
-    border: 0;
-    font-weight: 500;
-    opacity: 0.8;
+.navbar li:last-child {
     margin-left: 5px;
-    font-size: calc(10px + .5vw);
 }
 
-.get-firefox-btn:hover {
-    background-color: #fff;
-    border: 2px solid hsl(229, 31%, 21%);
-    box-shadow: none;
+.navbar li .nav-link {
+    display: inline-block;
+    padding: 5% 7%;
+    width: calc(78px + 1vw);
+    text-align: center;
+    text-transform: uppercase;
     color: hsl(229, 31%, 21%);
+    letter-spacing: 2px;
+    font-size: calc(8px + .5vw);
 }
 
-.hero-img .hero-img-illustrate {
-    position: relative;
+.navbar li .nav-link:hover {
+    color: hsl(0, 94%, 66%);
 }
 
-.hero-img .hero-img-illustrate img {
-    position: relative;
-    right: -12%;
+.navbar li:last-child .nav-link {
+    width: calc(80px + 2vw);
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 1px hsl(0, 0%, 90%);
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid hsl(0, 94%, 66%);
 }
 
-.hero-img-bg {
-    background-color: hsl(231, 69%, 60%);
-    position: absolute;
-    height: 75%;
-    width: 100%;
-    bottom: 0;
-    left: 45%;
-    border-bottom-right-radius: 25%;
-    border-bottom-left-radius: 25%;
-    z-index: -1;
+.navbar li:last-child .nav-link:hover {
+    color: hsl(0, 94%, 66%);
+    background-color: #fff;
 }
 
-@media only screen and (max-width:905px) {
-    .hero-writeup {
-        padding-right: 0;
-    }
-
-    .hero-writeup h1 {
-        font-weight: 500;
-        font-size: calc(23px + 1vw);
-        color: hsl(229, 31%, 21%);
-    }
-
-    .get-chrome-btn,
-    .get-firefox-btn {
-        font-size: calc(5px + 1vw);
-    }
-}
-
-@media only screen and (max-width:661px) {
-    .hero {
+@media only screen and (max-width: 661px) {
+    .navbar {
         display: block;
-        flex-direction: row-reverse;
-        align-items: center;
-        padding: 10% 7% 0;
-        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: red;
     }
 
-    .hero-writeup {
-        padding: 10% 7% 0;
+    .navbar li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         width: 100%;
         text-align: center;
     }
 
-    .hero-writeup h1 {
-        font-size: calc(23px + 1.2vw);
+    .navbar li:last-child {
+        margin: 0;
     }
 
-    .writeup-text {
-        margin: 5% 0;
-        font-size: calc(10px + 1vw);
+    .navbar li a:hover {
+        color: hsl(0, 94%, 66%);
     }
 
-    .get-chrome-btn {
-        font-size: calc(12px + .8vw);
-        margin-right: 2px;
-    }
-
-    .get-firefox-btn {
-        margin-left: 2px;
-        font-size: calc(12px + .8vw);
-    }
-
-    .hero-img {
+    .navbar li .nav-link:last-child {
+        margin: 0;
         width: 100%;
-        display: block;
-    }
-
-    .hero-img .hero-img-illustrate {
-        display: block;
-    }
-
-    .hero-img .hero-img-illustrate img {
-        right: 0%;
-    }
-
-    .hero-img-bg {
-        display: block;
-        height: 80%;
-        width: 115%;
-        left: 20%;
+        border: none;
+        background-color: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        color: hsl(229, 31%, 21%);
     }
 }
