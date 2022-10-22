@@ -3,11 +3,11 @@ body {
     overflow-x: hidden;
 }
 
-/* NAV STARTS */
 body {
     position: relative;
 }
 
+/* overlay */
 .overlay {
     position: fixed;
     display: none;
@@ -23,10 +23,6 @@ body {
     display: block;
 }
 
-.disable-scroll {
-    overflow: hidden;
-}
-
 .overlay .social-links {
     position: relative;
     top: 90%;
@@ -36,6 +32,13 @@ body {
     margin: 0 5%;
 }
 
+/* disable scrolling */
+.disable-scroll {
+    overflow: hidden;
+}
+
+
+/* NAV STARTS */
 .mynav {
     padding: 3% 7% 1% 8%;
     width: 100%;
@@ -109,7 +112,6 @@ body {
 @media only screen and (max-width: 746px) {
     .mynav {
         position: relative;
-        background-color: hsl(229, 31%, 21%);
         z-index: 1;
     }
 
@@ -148,8 +150,9 @@ body {
         position: relative;
     }
 
-    .mynav .col-6:first-child svg .svg path,
-    .mynav .col-6:first-child .top-menu svg path {
+    .svg path.white,
+    .svg .white,
+    .top-menu svg path.white {
         fill: #fff;
     }
 
@@ -196,5 +199,10 @@ body {
         border-radius: 5px;
         background-color: transparent;
 
+    }
+
+    .top-menu svg.black path,
+    svg .svg g.black path {
+        fill: hsl(229, 31%, 21%);
     }
 }
