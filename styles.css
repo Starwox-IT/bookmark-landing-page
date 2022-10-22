@@ -28,7 +28,7 @@ body {
     top: 90%;
 }
 
-.overlay .social-links svg {
+.overlay .social-links a {
     margin: 0 5%;
 }
 
