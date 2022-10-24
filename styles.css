@@ -1,9 +1,6 @@
-html,
 body {
-    overflow-x: hidden;
-}
-
-body {
+    font-family: "rubik";
+    font-size: calc(10px + .5vw);
     position: relative;
     height: 100vw;
 }
@@ -18,6 +15,7 @@ body {
     left: 0;
     opacity: 0.9;
     background-color: hsl(229, 31%, 21%);
+    z-index: 1;
 }
 
 .show-overlay {
@@ -37,7 +35,6 @@ body {
 .disable-scroll {
     overflow: hidden;
 }
-
 
 /* NAV STARTS */
 .mynav {
@@ -100,7 +97,6 @@ body {
 }
 
 @media only screen and (max-width: 914px) {
-
     .mynav .col-6:first-child {
         width: 40%;
     }
@@ -113,7 +109,7 @@ body {
 @media only screen and (max-width: 746px) {
     .mynav {
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
 
     .top-menu {
@@ -139,7 +135,6 @@ body {
     .mynav .col-6:last-child {
         width: 100%;
         display: block;
-
     }
 
     .mynav .col-6:first-child .top-menu {
@@ -199,11 +194,167 @@ body {
         border-style: inset;
         border-radius: 5px;
         background-color: transparent;
-
     }
 
     .top-menu svg.black path,
     svg .svg g.black path {
         fill: hsl(229, 31%, 21%);
+    }
+}
+
+
+/* HERO STARTS */
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5% 7% 0;
+    overflow-x: hidden;
+}
+
+.hero-writeup {
+    padding-right: 7%;
+}
+
+.hero-writeup h1 {
+    font-weight: 500;
+    font-size: calc(30px + .5vw);
+    color: hsl(229, 31%, 21%);
+}
+
+.hero-writeup p {
+    color: hsl(0, 0%, 60%);
+}
+
+.writeup-text {
+    margin: 5% 0;
+}
+
+.get-chrome-btn {
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    font-weight: 500;
+    font-size: calc(10px + .5vw);
+    margin-right: 5px;
+}
+
+.get-chrome-btn:hover {
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    background-color: #fff;
+}
+
+.get-firefox-btn {
+    color: hsl(229, 31%, 21%);
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 97%);
+    border: 2px solid hsl(0, 0%, 97%);
+    box-shadow: 0px 4px 5px 1px hsl(0, 0%, 90%);
+    border: 0;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-left: 5px;
+    font-size: calc(10px + .5vw);
+}
+
+.get-firefox-btn:hover {
+    background-color: #fff;
+    border: 2px solid hsl(229, 31%, 21%);
+    box-shadow: none;
+    color: hsl(229, 31%, 21%);
+}
+
+.hero-img .hero-img-illustrate {
+    position: relative;
+}
+
+.hero-img .hero-img-illustrate img {
+    position: relative;
+    right: -12%;
+}
+
+.hero-img-bg {
+    background-color: hsl(231, 69%, 60%);
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    bottom: 0;
+    left: 45%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    z-index: -1;
+}
+
+@media only screen and (max-width:905px) {
+    .hero-writeup {
+        padding-right: 0;
+    }
+
+    .hero-writeup h1 {
+        font-weight: 500;
+        font-size: calc(23px + 1vw);
+        color: hsl(229, 31%, 21%);
+    }
+
+    .get-chrome-btn,
+    .get-firefox-btn {
+        font-size: calc(5px + 1vw);
+    }
+}
+
+@media only screen and (max-width:661px) {
+    .hero {
+        display: block;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 10% 7% 0;
+        overflow-x: hidden;
+    }
+
+    .hero-writeup {
+        padding: 10% 7% 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-writeup h1 {
+        font-size: calc(23px + 1.2vw);
+    }
+
+    .writeup-text {
+        margin: 5% 0;
+        font-size: calc(10px + 1vw);
+    }
+
+    .get-chrome-btn {
+        font-size: calc(12px + .8vw);
+        margin-right: 2px;
+    }
+
+    .get-firefox-btn {
+        margin-left: 2px;
+        font-size: calc(12px + .8vw);
+    }
+
+    .hero-img {
+        width: 100%;
+        display: block;
+    }
+
+    .hero-img .hero-img-illustrate {
+        display: block;
+    }
+
+    .hero-img .hero-img-illustrate img {
+        right: 0%;
+    }
+
+    .hero-img-bg {
+        display: block;
+        height: 80%;
+        width: 115%;
+        left: 20%;
     }
 }
